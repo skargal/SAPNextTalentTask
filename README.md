@@ -18,7 +18,7 @@ In the project directory (`SAPTaskApp`) run
 
 **Decisions:**
 
-I decided to use list comprehensions to implement the functions inside of `app.py` for features 1-4 because not only is it a nice syntactic sugar I enjoy, but Python will allocate the list’s memory first, before adding the elements to it, instead of having to resize on runtime. It’ll also avoid having to make calls to ‘append’, which may be cheap but add up. Lastly, code using comprehensions is considered more ‘Pythonic’ — better fitting Python’s style guidelines.
+I decided to use list comprehensions to implement the functions inside of `app.py` for features 1-4 because Python will allocate the list’s memory first, before adding the elements to it, instead of having to resize on runtime. It’ll also avoid having to make calls to `append`, which may be cheap but add up. Lastly, code using comprehensions is considered more ‘Pythonic’ — better fitting Python’s style guidelines.
 
 I used `map()` because it is a built-in function that allows you to process and transform all the items in an iterable without using an explicit for loop. `map()` is useful when you need to apply a transformation function to each item in an iterable and transform them into a new iterable. `map()` is one of the tools that support a functional programming style in Python and it was useful for typecasting the integers to strings.
 

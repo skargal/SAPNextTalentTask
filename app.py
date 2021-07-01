@@ -15,7 +15,7 @@ def display_ints(number):
 ''' will display only odd numbers in that range '''
 @app.route('/<int:number>/odd')
 def display_odd_ints(number):
-    return (' '.join(map(str, [i for i in range(1, number*2+1,2)])))
+    return (' '.join(map(str, [i for i in range(1, number) if i % 2 != 0])))
 
 ''' will display only even numbers in that range '''
 @app.route('/<int:number>/even')
